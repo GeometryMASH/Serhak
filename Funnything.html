@@ -1,1 +1,23 @@
 
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embed URL</title>
+</head>
+<body>
+    <p>Please type a URL:</p>
+    <input type="text" id="urlInput">
+    <button onclick="embedUrl()">Embed URL</button>
+    <div id="embeddedUrl"></div>
+
+    <script>
+        function embedUrl() {
+            var url = document.getElementById('urlInput').value;
+            var embeddedUrl = `<iframe src="${url}" width="800" height="600"></iframe>`;
+            document.getElementById('embeddedUrl').innerHTML = embeddedUrl;
+        }
+    </script>
+</body>
+</html>
+```
